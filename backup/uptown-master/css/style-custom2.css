@@ -1,0 +1,103 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #fb86aa;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+body {
+  margin: 0;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgb(40, 40, 40);
+  text-align: left;
+  background-color: rgb(245, 220, 224, 0.5);
+}
+
+.text-pink {
+  color: var(--pink) !important;
+}
+
+.text-black {
+  color: rgb(40, 40, 40) !important;
+}
+
+.h-navbar-brand {
+  color: var(--pink) !important;
+}
+.h-navbar-brand:hover,
+.h-navbar-brand:focus {
+  text-decoration: none;
+  color: #8556a4 !important;
+}
+.h-navbar-light .h-navbar-nav>.h-nav-item>.h-nav-link {
+      font-size: 15px;
+      padding-top: 0.9rem;
+      padding-bottom: 0.9rem;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: var(--pink);
+      font-weight: 700;
+      opacity: 1 !important
+}
+.h-navbar-light .h-navbar-nav>.h-nav-item>.h-nav-link:hover {
+  color: #8556a4;
+}
+.h-navbar-light.scrolled {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-top: -130px;
+   background: #313053;
+  -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+}
+.h-navbar-light.scrolled .h-navbar-brand {
+  color: var(--pink);
+}
+.h-navbar-light.scrolled .h-navbar-brand:hover {
+  color: #fff;
+}
+.h-navbar-light.scrolled .h-navbar-nav>.h-nav-item>.h-nav-link {
+  color: var(--pink);
+}
+.h-navbar-light.scrolled .h-navbar-nav>.h-nav-item>.h-nav-link:hover {
+  color: #fff;
+}
+.h-logo {
+  height: 60px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+.h-navbar-light .h-navbar-brand:hover .h-logo {
+  filter: invert(39%) sepia(79%) saturate(379%) hue-rotate(233deg) brightness(75%) contrast(76%);
+}
+.h-navbar-light.scrolled .h-navbar-brand:hover .h-logo {
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(99deg) brightness(300%) contrast(101%);
+}
